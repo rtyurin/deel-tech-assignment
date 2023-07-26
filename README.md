@@ -8,7 +8,7 @@ For this project I created a small [mock server](https://github.com/rtyurin/mock
 It's available on this URL: https://mock-server-sepia.vercel.app/users
 
 ### Important
-If, for some reason, the server is down, you can run it locally by doing the following:
+If, for some reason, the server is down, you can run it using local data by doing the following:
 in the root of the project there is .env file with the following content:
 ```
 VITE_API_URL=https://mock-server-sepia.vercel.app
