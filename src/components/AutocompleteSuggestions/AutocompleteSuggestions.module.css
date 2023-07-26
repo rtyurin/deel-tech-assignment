@@ -1,0 +1,17 @@
+.list {
+  border: 1px solid #ccc;
+  max-height: 200px;
+  width: 220px;
+  overflow-y: scroll;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  left: calc(50% - 110px);
+}
+
+
+.loadingItem {
+  padding: 10px;
+  cursor: default;
+  background-color: #ccc;
+}

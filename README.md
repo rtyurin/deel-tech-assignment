@@ -1,27 +1,21 @@
-# React + TypeScript + Vite
+# Deel tech assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+The goal of this assignment is to create an autocomplete component that can be used in a web application. 
+The component should be production ready or close to it.
+For this project I created a small [mock server](https://github.com/rtyurin/mock-server) with some data to simulate a real world scenario.
 
-Currently, two official plugins are available:
+It's available on this URL: https://mock-server-sepia.vercel.app/users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
+### Important
+If, for some reason, the server is down, you can run it locally by doing the following:
+in the root of the project there is .env file with the following content:
 ```
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+VITE_API_URL=https://mock-server-sepia.vercel.app
 ```
+Simply remove `VITE_API_URL` and the app will use the local data.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## How to run
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm run dev`
